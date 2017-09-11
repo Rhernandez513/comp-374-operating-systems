@@ -22,7 +22,7 @@ int main(int argc, char * argv []) {
       std::cout << value << " is not " << constant << std::endl;
     }
 
-    std::cout << "buffer: " << buffer_size << std::endl;
+    std::cout << "buffer_size: " << buffer_size << std::endl;
 
     value = argv[3];
     constant = "--file_name";
@@ -30,7 +30,7 @@ int main(int argc, char * argv []) {
     if (constant.compare(value) == 0) {
       /* std::cout << value << " should be " << constant << std::endl; */
       file_name = std::string(argv[4]);
-      std::cout << "value of file_name: "  << file_name << std::endl;
+      std::cout << "file_name: "  << file_name << std::endl;
     }
 
     value =  argv[5];
@@ -45,7 +45,7 @@ int main(int argc, char * argv []) {
       write_count = std::stoi(argumentValue);
     }
 
-    std::cout << "Write Count : " << write_count << std::endl;
+    std::cout << "write_count : " << write_count << std::endl;
 
   }
   return 0;
