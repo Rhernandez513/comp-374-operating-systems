@@ -8,5 +8,5 @@ package osdi.collections;
  */
 public interface SimpleQueue<T> {
     void enqueue(T item);
-    T dequeue() throws InterruptedException;
+    T dequeue();
 }

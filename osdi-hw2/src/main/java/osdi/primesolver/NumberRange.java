@@ -30,8 +30,8 @@ public class NumberRange implements Iterable<Long> {
         private long currentValue;
 
         private NumberIterator(long startValue, long maxValue) {
-            this.maxValue = maxValue;
             this.currentValue = startValue;
+            this.maxValue = maxValue;
         }
 
         @Override

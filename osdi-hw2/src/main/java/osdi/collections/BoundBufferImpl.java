@@ -11,12 +11,13 @@ class BoundBufferImpl<T> implements SimpleQueue<T> {
     private final java.util.Queue<T> queue;
 
     private final Semaphore mutex = new Semaphore(1);
-    private final Semaphore empty = new Semaphore(50);
+    private Semaphore empty = new Semaphore(50);
     private final Semaphore full  = new Semaphore(0);
 
     public BoundBufferImpl(int bufferSize) {
         this.bufferSize = bufferSize;
         queue = new java.util.ArrayDeque<>();
+        this.empty = new Semaphore((bufferSize));
     }
 
     @Override
