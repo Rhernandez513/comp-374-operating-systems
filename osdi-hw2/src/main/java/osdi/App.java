@@ -2,7 +2,7 @@ package osdi;
 
 import osdi.primesolver.NumberRange;
 import osdi.primesolver.PrimeNumberCounter;
-import osdi.locks.Monitor;
+// import osdi.locks.Monitor;
 
 /*
  * you may not use anything in java.util.concurrent.* you may only use locks from osdi.locks.*
@@ -15,16 +15,15 @@ public class App
     private static final long million = thousand * thousand;
     private static final long endValue = 200L * million;
 
-    private static final Monitor monitor = new Monitor();
+    // private static final Monitor monitor = new Monitor();
 
-    private final int counter = 0;
+    // private final int count = 0;
 
     /*
      * you may change this method. you must use NumberRange, PrimeNumberCounter, and reportNumberOfPrimes in here
      */
     public static void main( String[] args )
     {
-
 
 
             NumberRange range = new NumberRange(startValue, endValue);
